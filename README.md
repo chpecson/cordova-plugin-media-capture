@@ -24,7 +24,20 @@ description: Capture audio, video, and images.
 
 I updated this to work with latest version of android and ionic capacitor, resolves the permission error
 
-```
+```vue
+<template>
+  <ion-page>
+    <ion-header :translucent="true">
+      <ion-toolbar>
+        <ion-title>MediaCapture Vue 3</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content :fullscreen="true">
+      <ion-button @click="takeVideo">TAKE VIDEO</ion-button>
+    </ion-content>
+  </ion-page>
+</template>
 <script lang="ts">
 import {
   IonButton,

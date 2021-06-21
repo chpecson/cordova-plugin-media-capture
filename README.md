@@ -22,9 +22,22 @@ description: Capture audio, video, and images.
 #         under the License.
 -->
 
-I updated this to work with latest version of android and ionic capacitor
+I updated this to work with latest version of android and ionic capacitor, resolves the permission error
 
 ```
+<script lang="ts">
+import {
+  IonButton,
+  IonContent,
+  IonHeader,
+  IonPage,
+  IonTitle,
+  IonToolbar
+} from "@ionic/vue";
+import { MediaCapture } from "@ionic-native/media-capture";
+import { ref } from "vue";
+import { Capacitor } from "@capacitor/core";
+import { Filesystem, Directory } from "@capacitor/filesystem";
 export default {
   name: "Other",
   components: {

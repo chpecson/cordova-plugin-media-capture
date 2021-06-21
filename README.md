@@ -23,6 +23,7 @@ description: Capture audio, video, and images.
 -->
 
 I updated this to work with latest version of android and ionic capacitor, resolves the permission error
+[full project sample](https://github.com/aaronksaunders/vue-media-capture-2)
 
 ```vue
 <template>
